@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic Needs of LYR -->
+        <title>LYR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+
+        <!-- CSS from the skeleton framework
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="skeleton/normalize.css">
+        <link rel="stylesheet" href="skeleton/skeleton.css">
+
+        <link rel="stylesheet" href="assets/fonts/fonts.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+
+        <!-- These are the attributes for the awesome-notifications package -->
+        <link rel="stylesheet" href="notify/style.css"></link>
+        <script src="notify/index.var.js"></script>
+        <script src="notify/validate.js" defer></script>
+    </head>
+
+    <body>        
+        <!-- The Navigation Bar -->
+		<nav>
+            <div id="title">LYR</div>
+
+			<a href="index.html">
+				<div class="nav_item">HOME</div>
+			</a>
+		</nav>
+
+        <div class="container">
+            <div class="profile" id="left">
+                <div class="filter"></div>
+                <div class="dContain">
+                    <div class="details" class="row">
+                        <label class="two columns" for="username">Name: </label>
+                        <input class="ten columns" type="text" id="username" name="username" placeholder="Your Name">
+                    </div>
+
+                    <div class="details" class="row">
+                        <div class="two columns">Gender:</div>
+                        <label class="four columns" for="male">Male</label>
+                        <input class="one column" type="radio" id="male" name="gender">
+                        <label class="four columns" for="female">Female</label>
+                        <input class="one column" type="radio" id="female" name="gender">
+                    </div>
+
+                    <div class="details" class="row">
+                        <label class="two columns" for="userheight">Height: </label>
+                        <input class="six columns" type="number" id="userheight" name="userheight" placeholder="Your height in centimetre">
+                        <div class="two columns">cm</div>
+                    </div>
+                </div>
+            </div>
+
+            <img id="match" src="assets/images/icons/all_match_FILL0_wght400_GRAD0_opsz24.svg" />
+            
+            <div class="profile" id="right">
+                <div class="filter"></div>
+                <div class="dContain">
+                    <span class="details" id="Mname">Name: <span id="content"></span></span>
+                    <span class="details" id="Mgender">Gender: <span id="content"></span></span>
+                    <span class="details" id="Mheight">Height: <span id="content"></span></span>                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        LYR, 2023.
+        <em>by LYR</em>
+    </footer>
+</html>

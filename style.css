@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6CBB7;
+}
+
+#title {
+    font-family: 'Space Mono', monospace;
+    font-size: 50px;
+    text-align: center;
+    color: #9C2D41;
+}
+
+nav {
+    font-family: 'Rosarivo', serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	text-decoration: none;
+
+  	background-color: #CB857C;
+	position: sticky;
+
+	padding: 5px;
+    margin-bottom: 10px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+.nav_item {
+	color: #9C2D41;
+    padding-left: 5px;
+}
+
+.nav_item:hover {
+	color: grey;
+}
+
+/*
+ * Specific Styling for Desktop and Tablets
+*/
+@media (orientation: landscape) {
+    .container {
+        width: 80%;
+        height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .profile {
+        height: 100%;
+        width: 45%;
+    }
+}
+
+/*
+ * Specific Styling for Mobile Phones
+ * Should be good enough for now...
+ * ~The coder of LYR
+*/
+@media (orientation: portrait) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile {
+        height: 100%;
+        width: 90%;
+    }
+}
+
+.profile {
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-sizing: content-box;
+    
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#left{
+    background-image: url('assets/images/profiles/Macbeth.jpg');
+}
+
+#right{
+    background-image: url('assets/images/default.png');
+}
+
+.filter {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(#dfd, #ddf);
+    opacity: 0.3;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.dContain {
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 2;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.details {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+#match {
+    height: 100px;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: #FAF7F4;
+}
